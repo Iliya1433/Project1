@@ -1,110 +1,117 @@
+/* Общие стили */
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Задание шрифта по умолчанию */
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0; /* Убираем отступы у body */
 }
 
+/* Стили для контейнера */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0; /* Убираем центрирование контейнера */
   padding: 20px;
+  text-align: left; /* Выравнивание текста по левому краю */
 }
 
+/* Стили для шапки сайта */
 header {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Цвет фона для header */
   padding: 20px 0;
-  text-align: center;
+  text-align: left; /* Выравнивание заголовка по левому краю */
 }
 
 header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 32px; /* Размер шрифта заголовка */
+  margin-bottom: 10px; /* Отступ снизу */
 }
 
+/* Стили для навигационного меню */
 nav {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-start; /* Выравнивание навигации влево */
+  gap: 20px; /* Расстояние между ссылками */
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #333; /* Цвет текста ссылок */
+  font-size: 16px; /* Размер шрифта ссылок */
+  transition: color 0.3s ease; /* Плавный переход для цвета при наведении */
 }
 
+/* Стили для основного контента */
 main {
   padding: 20px 0;
 }
 
+/* Стили для секций */
 section {
   padding: 20px 0;
 }
 
 section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Размер шрифта для заголовков секций */
+  margin-bottom: 10px; /* Отступ снизу */
 }
 
 section img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  width: 50%; /* Ширина изображения на всю ширину контейнера */
+  height: auto; /* Автоматическая высота изображения */
+  margin-bottom: 20px; /* Отступ снизу */
 }
 
 section p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 16px; /* Размер шрифта для абзацев */
+  line-height: 1.5; /* Межстрочный интервал */
 }
 
 section ul {
-  list-style: disc;
-  margin-left: 20px;
+  list-style: disc; /* Маркеры списка - диски */
+  margin-left: 20px; /* Отступ слева для списка */
   padding: 0;
   font-size: 16px;
 }
 
+/* Стили для таблицы */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+  width: 100%; /* Таблица занимает всю ширину контейнера */
+  border-collapse: collapse; /* Убираем промежутки между ячейками */
+  margin-bottom: 20px; /* Отступ снизу */
 }
 
 th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: left;
+  padding: 10px; /* Внутренние отступы для ячеек */
+  border: 1px solid #ddd; /* Границы ячеек */
+  text-align: left; /* Выравнивание текста по левому краю */
 }
 
 th {
-  background-color: #f0f0f0;
-  font-weight: bold;
+  font-weight: bold; /* Жирный текст для заголовков таблицы */
 }
 
+/* Стили для подвала сайта */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: black; /* Цвет фона подвала */
+  color: #fff; /* Цвет текста в подвале */
   padding: 20px 0;
-  text-align: center;
+  text-align: left; /* Выравнивание текста по левому краю */
 }
 
 footer p {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Убираем отступы снизу у параграфа */
 }
 
 footer a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none; /* Убираем подчеркивание у ссылок в подвале */
+  color: #fff; /* Цвет ссылок */
+  transition: color 0.3s ease; /* Плавный переход для цвета при наведении */
 }
 
-nav a:hover {
-  color: #007bff;
-}
-
-footer a:hover {
-  color: #007bff;
+/* Изменение цвета ссылок при наведении */
+nav a:hover, footer a:hover {
+  color: orange; /* Цвет текста при наведении - оранжевый */
 }
